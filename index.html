@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>OracleToad Weather</title>
+    <script type="module" src="src/scripts/main.js"></script>
+  </head>
+  <body>
+    <div id="chatContainer">
+    </div>
+    <script type="module" src="src/scripts/chat_cacher.js"></script>
+    <div id="uiContainer">
+      <button class="uiButton" id="forecastButton">🪬 Prognoza</button>
+      <input class="uiButton" type="text" placeholder="Twoja miejscowość" id="locationInput">
+      <a href="./toad_picker.html"><button class="uiButton" id="forecastButton">🖼️</button></a>
+      <a href="./toad_tips.html"><button class="uiButton" id="toadTipsButton">🖋️</button></a>
+    </div>
+    <img src="./src/images/the_oracle.png" id="oraclePhoto" class="oracleAppear">
+  </body>
+</html>

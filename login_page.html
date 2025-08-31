@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>OracleToad Weather</title>
+    <script type="module" src="./src/scripts/auth_utils.js"></script>
+    <script type="module" src="./src/scripts/login_page.js" defer></script>
+</head>
+<body>
+    <div id="mainContainer">
+        <a href="./index.html" id="backLink">Powrót</a>
+        <p>Zaloguj się, aby zasięgnąć porady ropuchy.</p>
+        <form id="loginForm">
+            <label for="login" class="loginLabel">Login:</label>
+            <input type="text" placeholder="Podaj login..." required=true class="loginInput" id="login">
+            <label for="password" class="loginLabel">Hasło:</label>
+            <input type="password" placeholder="Podaj hasło..." required=true class="loginInput" id="password">
+        </form>
+        <button id="submit">Zaloguj</button>
+        <p id="loginError">Nieprawidłowy login lub hasło. Spróbuj jeszcze raz.</p>
+        <p id="credentialsInfo">
+            Na potrzeby projektu, aplikacja nie posiada funkcji rejestracji nowych kont.
+            Baza danych loginów i haseł do istniejących kont można znaleźć 
+            <a href="https://dummyjson.com/users">tutaj</a>. 
+            Przykładowe dane do konta to: 
+            <br/>
+            Login: "emilys"
+            <br/>
+            Hasło: "emilyspass"
+        </p>
+    </div>
+</body>
+</html>
